@@ -49,7 +49,7 @@ header {
 
 .top-section {
     width: 83%;
-    height: 520px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,14 +61,52 @@ header {
 }
 
 .top-left p {
-    font-size: 1.3m;
+    font-size: 1.2em;
     line-height: 150%;
     width: 700px;
 }
 
+.email-container {
+    margin-top: 30px;
+}
+
+.email-container input {
+    background: #ffffff5b;
+    height: 45px;
+    width: 250px;
+    padding: 0;
+    border: none;
+    padding: 0 10px 0 10px;
+}
+
+.email-container input:hover {
+    background: #ffffff62;
+}
+
+.email-container ::placeholder {
+    color: white;
+}
+
+.email-container :focus {
+    outline: none;
+}
+
+.email-container button {
+    background: #0C6FB5;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    border: none;
+}
+
+.email-container button:hover {
+    cursor: pointer;
+    background: #0d78c4;
+
+}
+
 .img-container {
     width: 740px;
-    height: 360px;
+    height: 440px;
     position: relative;
 }
 
@@ -81,14 +119,14 @@ header {
 .img2-container {
     position: absolute;
     top: 170px;
-    left: 30px;
-    background: #070B32;
+    left: 45px;
+    background: linear-gradient(206.13deg, #0C6FB5 0%, #070B32 30.35%);
     width: 290px;
     height: 310px;
 }
 
 .top-right .img2-container img {
     width: 100%;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 7px;
+    margin-top: 7px;
 }
