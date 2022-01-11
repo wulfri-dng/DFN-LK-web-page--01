@@ -49,7 +49,7 @@ header {
 
 .top-section {
     width: 83%;
-    height: 550px;
+    height: 620px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,4 +129,103 @@ header {
     width: 100%;
     margin-right: 7px;
     margin-top: 7px;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+    width: 83%;
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-top h1 {
+    font-size: 2.9em;
+    margin: 0;
+}
+
+.second-top p {
+    width: 70%;
+    font-size: 1.2em;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 25px;
+}
+
+.second-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-left {
+    border: 1px solid black;
+    width: 33%;
+}
+
+.second-left p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.second-left h2 {
+    font-size: 1.9em;
+    letter-spacing: 1px;
+}
+
+.second-left .img-container {
+    width: 100%;
+    height: 160px;
+    margin: 70px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-left .img-container .img-box {
+    position: relative;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    height: 152px;
+    width: 31%;
+}
+
+.second-left .img-container .img-box img:nth-child(1) {
+    position: absolute;
+    width: 26px;
+    bottom: 20px;
+    left: 22px;
+}
+
+.fintech-gradient {
+    border-image-source: linear-gradient(90deg, #F3097E 0%, #E18CF0 100%);
+}
+
+.fincon-gradient {
+    border-image-source: linear-gradient(90deg, #F16F6A 0%, #F9CFA2 100%);
+}
+
+.finreg-gradient {
+    border-image-source: linear-gradient(90deg, #875FFC 0%, #1ED6DD 100%);
+}
+
+.second-left .img-container .img-box img {
+    width: 100%;
+}
+
+.second-center {
+    border: 1px solid black;
+    width: 33%;
+}
+
+.second-right {
+    width: 33%;
+    border: 1px solid black;
 }
