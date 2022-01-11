@@ -55,15 +55,18 @@ header {
     justify-content: space-between;
 }
 
+.top-left {
+    width: 50%;
+}
+
 .top-left h1 {
     font-size: 4em;
-    width: 700px;
 }
 
 .top-left p {
     font-size: 1.2em;
     line-height: 150%;
-    width: 700px;
+    width: 85%;
 }
 
 .email-container {
@@ -104,37 +107,38 @@ header {
 
 }
 
-.img-container {
-    width: 740px;
+.top-right {
+    width: 50%;
     height: 440px;
     position: relative;
 }
 
-.top-right img:nth-child(1) {
+.top-right .large-img {
     position: absolute;
     right: 0;
-    width: 554px;
+    width: 71%;
 }
 
 .img2-container {
     position: absolute;
-    top: 170px;
-    left: 45px;
+    top: 190px;
+    left: 95px;
     background: linear-gradient(206.13deg, #0C6FB5 0%, #070B32 30.35%);
-    width: 290px;
+    width: 36%;
     height: 310px;
 }
 
-.top-right .img2-container img {
-    width: 100%;
-    margin-right: 7px;
-    margin-top: 7px;
+.top-right .img2-container .small-img {
+    margin-top: 6px;
+    width: 98%;
 }
 
 /* SECOND SECTION */
 
 .second-section {
+    position: relative;
     width: 83%;
+    height: 950px;
     margin-top: 240px;
     display: flex;
     flex-direction: column;
@@ -145,6 +149,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .second-top h1 {
@@ -162,6 +167,7 @@ header {
 }
 
 .second-bottom {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -181,20 +187,23 @@ header {
     letter-spacing: 1px;
 }
 
-.second-left .img-container {
+.second-left .img-container {    
+    border: 1px solid orange;
     width: 100%;
-    height: 160px;
+    height: 166px;
     margin: 70px 0 50px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .second-left .img-container .img-box {
+    border: 1px solid skyblue;
     position: relative;
     border-bottom: 10px solid;
     border-image-slice: 1;
-    height: 155px;
-    width: 31%;
+    height: 145px;
+    /* width: 31%; */
+    width: 155px;
 }
 
 .second-left .img-container .img-box img:nth-child(1) {
@@ -229,6 +238,7 @@ header {
 }
 
 .second-center img {
+    border: 1px solid green;
     width: 250px;
 }
 
@@ -240,27 +250,81 @@ header {
 
 .second-right .curve-vector-area {
     position: relative;
-    width: 180px;
-    height: 357px;
+    width: 265px;
+    height: 466px;
 }
 
 .second-right .curve-vector-area img {
+    border: 1px solid red;
     position: absolute;
 }
 
 .second-right .curve-vector-area img:nth-child(1) {
+    width: 150px;
     left: 20px;
 }
 
 .second-right .curve-vector-area img:nth-child(2) {
-    top: 96px;
+    top: 132px;
+    width: 188px;
 }
 
 .second-right .curve-vector-area img:nth-child(3) {
-    top: 179px;    
+    top: 235px;  
+    width: 188px;
 }
 
 .second-right .curve-vector-area img:nth-child(4) {
-    top: 190px;
+    width: 150px;
+    top: 248px;
     left: 20px;
 }
+
+.second-right .data-area {
+    border: 1px solid yellow;
+    height: 580px;
+    width: 100%;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second-right .data-area div {
+    position: relative;
+    display: flex;
+    height: 86px;
+}
+
+.second-right .data-area div:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.second-right .data-area div img:nth-child(1) {
+    height: 100%;
+}
+
+.second-right .data-area div img:nth-child(2) {
+    position: absolute;
+    left: 25px;
+    top: 23px;
+}
+
+.second-right .data-area div p {
+    margin-left: 25px;
+    font-size: 1.2em;
+    line-height: 150%;
+}
+
+/* THIRD SECTION */
+
+/* .thid-section {
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#rectangle {
+
+} */
