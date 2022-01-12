@@ -188,29 +188,34 @@ header {
 }
 
 .second-left .img-container {    
-    border: 1px solid orange;
     width: 100%;
     height: 166px;
-    margin: 70px 0 50px 0;
+    margin: 100px 0 50px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .second-left .img-container .img-box {
-    border: 1px solid skyblue;
+    display: flex;
+    align-items: flex-end;
     position: relative;
     border-bottom: 10px solid;
     border-image-slice: 1;
     height: 145px;
     /* width: 31%; */
-    width: 155px;
+    width: 31%;
 }
 
 .second-left .img-container .img-box img:nth-child(1) {
     position: absolute;
-    width: 26px;
-    bottom: 20px;
-    left: 22px;
+    width: 14%;
+    bottom: 10%;
+    left: 15%;
+}
+
+.second-left .img-container .img-box img:nth-child(2) {
+    margin-bottom: -10px;
+    width: 100%;
 }
 
 .fintech-gradient {
@@ -225,10 +230,6 @@ header {
     border-image-source: linear-gradient(90deg, #875FFC 0%, #1ED6DD 100%);
 }
 
-.second-left .img-container .img-box img {
-    width: 100%;
-}
-
 .second-center {
     width: 32%;
     display: flex;
@@ -238,8 +239,8 @@ header {
 }
 
 .second-center img {
-    border: 1px solid green;
-    width: 250px;
+    width: 43%;
+    min-width: 170px;
 }
 
 .second-right {
@@ -255,7 +256,6 @@ header {
 }
 
 .second-right .curve-vector-area img {
-    border: 1px solid red;
     position: absolute;
 }
 
@@ -281,7 +281,6 @@ header {
 }
 
 .second-right .data-area {
-    border: 1px solid yellow;
     height: 580px;
     width: 100%;
     margin-left: 65px;
@@ -293,7 +292,16 @@ header {
 .second-right .data-area div {
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: start;
     height: 86px;
+    width: 100%;
+}
+
+.second-right .data-area div div {
+    min-width: 65px;
+    width: 40%;
+    position: relative;
 }
 
 .second-right .data-area div:nth-child(2) {
@@ -301,17 +309,18 @@ header {
 }
 
 .second-right .data-area div img:nth-child(1) {
-    height: 100%;
+    width: 100%;
 }
 
-.second-right .data-area div img:nth-child(2) {
+.second-right .data-area div div img:nth-child(2) {
     position: absolute;
-    left: 25px;
-    top: 23px;
+    left: 30%;
+    top: 26px;
+    width: 43%;
 }
 
 .second-right .data-area div p {
-    margin-left: 25px;
+    margin-left: 20px;
     font-size: 1.2em;
     line-height: 150%;
 }
@@ -328,3 +337,111 @@ header {
 #rectangle {
 
 } */
+
+@media  (max-width:1700px) {
+    .top-section {
+        width: 88%;
+    }
+
+    .second-section {
+        width: 88%;
+    }
+}
+
+@media (max-width:1788px) {
+    .second-right .data-area div p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width:1607px) {
+    .second-right .data-area div p {
+        font-size: 1em;
+    }
+}
+
+@media  (max-width:1510px) {
+    .top-left h1 {
+        font-size: 3.7em;
+    }
+
+    .second-center {
+        width: 28%;
+    }
+
+    .second-left {
+        width: 36%;
+    }
+
+    .second-right {
+        width: 36%;
+    }
+}
+
+@media (max-width:1357px) {
+    .top-left h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media  (max-width:1300px) {
+    .top-left h1 {
+        font-size: 3em;
+    }
+
+    .second-center {
+        width: 24%;
+    }
+
+    .second-left {
+        width: 38%;
+    }
+
+    .second-right {
+        width: 38%;
+    }
+}
+
+@media  (max-width:1200px) {
+    .top-section {
+        width: 92%;
+    }
+
+    .second-section {
+        width: 92%;
+    }
+
+    .second-center {
+        width: 24%;
+    }
+
+    .second-left {
+        width: 38%;
+    }
+
+    .second-right {
+        width: 38%;
+    }
+
+    .second-center img {
+        min-width: 150px;
+    }
+}
+
+@media  (max-width:1050px) {
+    .second-center {
+        width: 23%;
+    }
+
+    .second-left {
+        width: 37%;
+    }
+
+    .second-right {
+        width: 40%;
+    }
+
+    .second-center img {
+        min-width: 138px;
+    }
+}
