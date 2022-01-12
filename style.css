@@ -612,6 +612,14 @@ body {
         width: 160px;
     }
 
+    .top-section {
+        margin-top: 140px;
+    }
+
+    .second-section {
+        margin-top: 100px;
+    }
+
     .second-right {
         width: 95%;
     }
