@@ -11,16 +11,18 @@
 
 <body>
     <div id="main-container">
-        <header>
-            <div class="nav-left">
-                <img src="src/logo.png" alt="">
-            </div>
-            <div class="nav-right">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Products</a>
-                <a href="">Company</a>
-                <a href="">Contact</a>
+        <header class="navBar">
+            <div class="inner-navBar">
+                <div class="nav-left">
+                    <img src="src/logo.png" alt="">
+                </div>
+                <div class="nav-right">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Products</a>
+                    <a href="">Company</a>
+                    <a href="">Contact</a>
+                </div>
             </div>
         </header>
         <div class="top-section">
@@ -29,7 +31,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde nisi eos ratione. Animi
                     perspiciatis</p>
                 <div class="email-container">
-                    <input type="text" placeholder="Your Email">
+                    <input type="email" placeholder="Your Email">
                     <button>Learn More</button>
                 </div>
             </div>
@@ -131,5 +133,15 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("scroll",(event) => {
+        if(this.scrollY> 80){
+            document.querySelector(".navBar").classList.add("navBar-scrolled");
+        }
+        else{
+            document.querySelector(".navBar").classList.remove("navBar-scrolled");
+            }
+        });
+    </script>
 </body>
 </html>
